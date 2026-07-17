@@ -76,11 +76,19 @@ Download the pre-built Banana environment matching your OS (you do **not** need 
 - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-Unzip it into `Value-based-methods/p1_navigation/` (or any folder of your choice), then point the `file_name` argument in `Navigation.ipynb` at the extracted `.exe` / `.app` / `.x86_64`, e.g.:
+Unzip it into `Value-based-methods/p1_navigation/` (or any folder of your choice), then point the `file_name` argument in `Navigation.ipynb` at the extracted `.exe` / `.app` / `.x86_64`. For example, on Windows (64-bit), if you unzipped the environment into the `p1_navigation` folder alongside the notebook:
 
 ```python
-env = UnityEnvironment(file_name=r"D:\python\DQN_project\.venv\Value-based-methods\p1_navigation\Banana_Windows_x86_64\Banana.exe")
+env = UnityEnvironment(file_name="Banana_Windows_x86_64/Banana.exe")
 ```
+
+On Mac:
+
+```python
+env = UnityEnvironment(file_name="Banana.app")
+```
+
+Adjust the path to match wherever you actually placed the downloaded environment on your machine.
 
 #### 5. Register the Jupyter kernel
 
