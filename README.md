@@ -4,6 +4,10 @@
 
 For this project, an agent is trained to navigate (and collect bananas!) in a large, square world using a Deep Q-Network (DQN).
 
+| Random Agent | Trained Agent |
+|---|---|
+| ![Random Agent](Training-Results/random_agent.gif) | ![Trained Agent](Training-Results/trained_agent.gif) |
+
 A reward of `+1` is provided for collecting a yellow banana, and a reward of `-1` is provided for collecting a blue banana. Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
 **State space**: 37 dimensions, containing the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
@@ -108,6 +112,8 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 | `dqn_agent.py` | The `Agent` class — epsilon-greedy action selection, experience replay, and the fixed-Q-targets DQN learning update |
 | `model.py` | `QNetwork` — the PyTorch network used as the function approximator |
 | `checkpoint.pth` | Saved weights of the trained agent (produced by running section 4 of the notebook) |
+| `Training-Results/random_agent.gif` | Recording of an untrained agent selecting actions randomly |
+| `Training-Results/trained_agent.gif` | Recording of the trained agent navigating and collecting bananas |
 
 ---
 
