@@ -162,5 +162,5 @@ Running the trained agent greedily for one episode (Section 5) achieved a score 
 
 ### Notes
 
-- A separate `Report.md` / `Report.ipynb` describing the learning algorithm, hyperparameters, network architecture, and ideas for future work is required alongside this README for the full project submission — see the project rubric.
+- See [`Report.md`](Report.md) for a full description of the learning algorithm, hyperparameters, network architecture, rewards plot, and ideas for future work.
 - If Unity fails to launch with `Error: Global Illumination requires a graphics device to render albedo.`, this is expected behavior of `no_graphics=True` and can be ignored; it only affects rendering, not training.
